@@ -1,7 +1,13 @@
 {
   "name": "root",
   "private": true,
+  "main": "index.js",
+  "scripts": {
+    "start": "node packages/back-end/index.js",
+    "postinstall": "lerna bootstrap && lerna run --scope front-end build:prod"
+  },
   "devDependencies": {
-    "lerna": "^3.19.0"
+    "lerna": "^3.19.0",
+    "yarn": "^1.21.0"
   }
 }
