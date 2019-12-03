@@ -39,7 +39,7 @@ deploy:
   provider: heroku
   api_key:
     secure: P61Yk+/iS7sZQTVj+E3e/OPeMKcH/kX5aQu7Rjz0Bb6dWYeAaFj0S9WXoxYFUMI8xJETxZOFsgRKGUafFWJOsmQWW5RBSrc4hjD6ERoKfHXoE4CVbNkhc/GeC4gwh6OulmU05vCEh+IaSfS90hORqpLwmo2u3dMqR/AhSWgPdIc41bq6sPDOPfCPdCo4tExggBtiL9IlcIuxKV5fBc9JRJ58Yjjfxa6n7jIe7Y1KCOFk8daTSlXvgeHMnOyt1faCtluLpkPbaonvI3Zo5B/b+a8KsT4vbJWG6F916KTWWTy9TK7HyqjPRRyHJUi8FxaNpucpzsi3iaTpKSx9TR0iPKlisHWU9KCG9LNIpFH/Y8mQq5i+zbbZjdmxX5Vssomo23Blr/lhSeql6RqQ5yWaxkD0sV+hsqcpRbkisUmrqMxAUg2OcLAZCxTJNsrYPVK51dsQ3cEEciDm1GSaUqBHTyZpEagBSzdWJuw+eJrnfUg9Z99e+zGkVCCXNneJt7eietp/9ksBNcFLLzxvJZ9zrmBRhAYAEx6EktjZPGz/KLli8SHdkdOqLXRyULvoL8+PkviMZFQgU8h8Rqz2RIS/2jlB5lY5+gBXgX2cbflqRmK1LimwYCacOD8vanCCETae5Plrw34hRWxy3D5qvU9VSpEDnfGKJAK/h1XWfV5BJ6w=
-  app: full_stack
+  app: fullstack-monorepo
   on:
     repo: raknjarasoa/full_stack
     branch: develop
