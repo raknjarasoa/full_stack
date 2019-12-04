@@ -4,10 +4,19 @@
   "main": "index.js",
   "scripts": {
     "start": "node packages/back-end/index.js",
+    "format": "prettier './{packages,e2e}/**/*.{ts,js,json,scss,md}' --write",
     "postinstall": "lerna bootstrap && lerna run --scope front-end build:prod"
   },
   "devDependencies": {
+    "husky": "^3.1.0",
     "lerna": "^3.19.0",
+    "prettier": "^1.19.1",
+    "pretty-quick": "^2.0.1",
     "yarn": "^1.21.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
   }
 }
