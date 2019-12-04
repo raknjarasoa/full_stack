@@ -57,17 +57,30 @@
               ],
               "serviceWorker": true,
               "ngswConfigPath": "ngsw-config.json"
+            },
+            "hmr": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.hmr.ts"
+                }
+              ]
             }
           }
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "front-end:build"
+            "browserTarget": "front-end:build",
+            "hmrWarning": false
           },
           "configurations": {
             "production": {
               "browserTarget": "front-end:build:production"
+            },
+            "hmr": {
+              "hmr": true,
+              "browserTarget": "front-end:build:hmr"
             }
           }
         },
